@@ -23,7 +23,6 @@ int main() {
 	ifstream configFile;
 	configFile.open(amongusConfigPath.str());
 	if (!configFile.good()) {
-		SetConsoleTextAttribute(hConsole, 12);
 		throwError("among us config file not found!");
 		system("pause");
 		return 0;
@@ -47,7 +46,6 @@ int main() {
 	ofstream newConfig;
 	newConfig.open(amongusConfigPath.str());
 	if(!newConfig.good()){
-		SetConsoleTextAttribute(hConsole, 12);
 		throwError("can't write the file!");
 		system("pause");
 		return 0;
