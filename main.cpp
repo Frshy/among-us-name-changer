@@ -13,8 +13,7 @@ void throwError(string error) {
 }
 
 int main() {
-
-	//settings up path
+	//setting up path
 	string username = getenv("USERNAME");
 	ostringstream amongusConfigPath;
 	amongusConfigPath << "C:\\Users\\" << username << "\\AppData\\LocalLow\\Innersloth\\Among Us\\playerPrefs";
