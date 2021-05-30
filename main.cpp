@@ -37,7 +37,7 @@ int main() {
 	printf("[?] Enter name you want to change to > ");
 	cin >> newName;
 
-	//replaceing name in readen file to new name
+	//replacing name in readen file to new name
 	string actualName = config.substr(0, config.find(","));
 	config.replace(0, actualName.size(), newName);
 
